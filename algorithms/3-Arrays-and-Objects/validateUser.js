@@ -1,7 +1,10 @@
 /**
 Please take 45 minutes to complete this exercise. If you still need more time, you can use Focus Friday.
 
-Write a JavaScript function that takes a list of registered users (an array of objects containing usernames and passwords) and a username and password as input. The function should return true if the provided username and password match any of the registered users, and false otherwise.
+-Write a JavaScript function that takes a list of registered users (an array of objects containing usernames and passwords) and 
+-a username and password as input. 
+-The function should return true if the provided username and password match any of the registered users, 
+-and false otherwise.
 
 Input:
     1. An array of objects containing registered users' information (username and password).
