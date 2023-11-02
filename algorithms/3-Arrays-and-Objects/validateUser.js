@@ -21,7 +21,12 @@ Steps
  */
 
 function validateUserCredentials(users, inputUsername, inputPassword) {
-    
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].inputUsername === inputUsername && users[i].inputPassword === inputPassword) {
+            return true;
+        } 
+    }
+    return false;
 }
 
 // Example usage
