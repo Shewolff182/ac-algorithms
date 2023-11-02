@@ -41,7 +41,7 @@ function hasDuplicates(arr) {
     let encounteredNumbers = {};
 
     for (let i = 0; i < arr.length; i++) {
-        let numIteration = numbers1[i];
+        let numIteration = arr[i];
         if (encounteredNumbers)
             return true;
     }
