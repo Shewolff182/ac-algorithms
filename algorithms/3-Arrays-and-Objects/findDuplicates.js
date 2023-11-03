@@ -24,6 +24,7 @@ Steps:
     run through each input in the array
 3. For each number, check if it already exists in the object.
     create a for loop to check if numbers exist within the object.
+    sticky note
 4. If the number is found, there is a duplicate, so return true.
     if statement: 
         return true: if duplicate is found
@@ -41,14 +42,21 @@ function hasDuplicates(arr) {
     let encounteredNumbers = {};
 
     for (let i = 0; i < arr.length; i++) {
-        let numIteration = arr[i];
-        if (encounteredNumbers)
+        let currentNum = arr[i];
+        //arr of i. The number at the index provided. ex.zeroth
+        if (currentNum in encounteredNumbers)
+        //to check if the currentNum is in the encounteredNumbers
             return true;
-    }
+        encounteredNumbers[currentNum] = 1;
+        //encounertedNumbers of currentNum--accessing it. checkmark: we have this number
+    } 
+    return false;
 }
 
 // Example usage
 const numbers1 = [1, 2, 3, 4, 5, 6];
 const numbers2 = [1, 2, 3, 4, 2, 6];
+const numbers3 = [2, 4, 6, 4];
 console.log(hasDuplicates(numbers1)); // Output: false
 console.log(hasDuplicates(numbers2)); // Output: true
+console.log(hasDuplicates(numbers3)); // Output: true
