@@ -34,4 +34,4 @@ function transportationOptions() {
     }
   }
 
-  $(document).ready(function() {alert(transportationOptions())});   
+alert(transportationOptions());   
